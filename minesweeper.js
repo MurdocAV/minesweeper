@@ -1,7 +1,19 @@
 document.addEventListener('DOMContentLoaded', startGame)
 
 // Define your `board` object here!
-// var board = 
+let board = {};
+board.cells = [];
+let boardCells = board.cells;
+// option for User Input on the number of cells
+let numOfCells = 9; // n.b. hard-coded
+let maxRowsColumns = Math.sqrt(numOfCells);
+
+for (let i = 0; i < maxRowsColumns; i++) {
+	for (let j = 0; j < maxRowsColumns; j++){
+		boardCells.push({row: i, col: j, isMine: false, hidden: true});
+	}
+}
+console.log(boardCells);// Outputs the board.cell object - testing
 
 function startGame () {
   // Don't remove this function call: it makes the game work!
