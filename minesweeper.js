@@ -25,7 +25,7 @@ for (let i = 0; i < maxRowsColumns; i++) {
 
 
 function userInput() {
-  let input = prompt('Choose a number from 3 to 6 to make up the square grid: ');
+  let input = prompt('Choose a number (from 3 to 6), to make up the square grid: ');
   return input
 }
 
