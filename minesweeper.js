@@ -85,7 +85,7 @@ function checkForWin () {
       //Inner level if statement
       if (currCell.isMarked == false)
         return
-    } else (currCell.isMine == false) { // Seperate if statment loop
+    } else { // Seperate if statment loop
       if (currCell.hidden == true)
         return
     }
