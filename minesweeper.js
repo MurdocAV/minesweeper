@@ -43,11 +43,10 @@ function minesGenerator(maxRowsColumns) {
     - Currently an incredibly week function call
  */
 function mineCheck(numOfMines, numOfCells) {
-	let mineCheck = Math.floor(Math.random(mineCount) * numOfCells);
-	let rtnValue
+	let mineCheck = Math.floor(Math.random(numOfMines) * numOfCells);
+	let rtnValue = 1;
 	if (mineCheck == 0){
 		rtnValue = 1;
-		mineCount -= 1; //Decrements GlobalVar mineCount
 	}
 	else {
 		rtnValue = 0;
